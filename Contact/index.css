@@ -1,0 +1,290 @@
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navBarContainer h1 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.navBarContainer {
+    background-color: white;
+
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    border-radius: 40px;
+    position: absolute;
+    top: 0%;
+    width: 98%;
+    margin: 10px;
+    position: fixed;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.navBarContainer .subNav {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s;
+
+}
+
+.subNav a {
+    /* font-family: 'Permanent Marker', cursive; */
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+}
+
+.subNav a:hover {
+    /* background-color: aqua; */
+    border-radius: 20px;
+    color: black;
+}
+
+input {
+    display: none;
+}
+
+input:checked~.subNav {
+    /* background-color: lightblue; */
+    left: 0;
+}
+
+.menuIcon {
+    display: none !important;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 800px) {
+    .navBarContainer {
+        width: 95%;
+    }
+
+    .navBarContainer .subNav {
+        position: fixed;
+        flex-direction: column;
+        justify-content: start;
+        padding-top: 50px;
+        background-color: cornflowerblue;
+        top: 76px;
+        left: -100%;
+        width: 100%;
+        height: 90vh;
+    }
+
+    .menuIcon {
+        display: block !important;
+    }
+}
+
+.backgroundimage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundimage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.backgroundimage h1 {
+    font-weight: 700;
+    color: #fff;
+    font-size: 60px;
+    font-family: "Poppins", Arial, sans-serif;
+    position: absolute;
+}
+
+@media screen and (max-width: 800px) {
+    .backgroundimgage {
+        width: 100%;
+    }
+}
+
+.title {
+    color: #000000;
+    font-weight: 400;
+    font-family: "Playfair Display", Arial, serif;
+    padding: 60px 20px 20px 20px;
+    font-size: 35px;
+}
+
+@media screen and (max-width: 800px) {
+    .title {
+        text-align: center;
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.box {
+    width: 100%;
+    min-height: 150px;
+    /* background-color: aqua; */
+    font-size: 22px;
+    padding: 25px 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
+
+}
+
+@media screen and (max-width: 800px) {
+    .main {
+        flex-direction: column;
+    }
+}
+
+.mapp {
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+
+}
+
+.box2 {
+    width: 500px;
+    box-shadow: -12px -8px 40px rgba(70, 70, 70, 0.12) inset;
+}
+
+.abc {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 20px;
+    width: 85%;
+    margin: 30px 20px 20px 20px;
+}
+
+.abc1 {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 20px;
+    width: 85%;
+    margin: 30px 20px 20px 15px;
+    height: 110px;
+}
+
+.box2 button {
+    padding: 10px 40px;
+    font-size: 20px;
+    margin: 0px 0px 10px 20px;
+    cursor: pointer;
+}
+
+.box2 button:hover {
+    background-image: linear-gradient(to top right, red, green);
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .mapp {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .zxc {
+        width: 100%;
+    }
+
+    .box1 {
+        width: 100%;
+    }
+
+    .box2 {
+        width: 100%;
+        background-color: aqua;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    color: white;
+}
+
+.Footer {
+    height: 300px;
+    width: 300px;
+    /* background-color: aqua; */
+    margin: 20px;
+    padding: 20px;
+    /* font-size: 25px; */
+}
+
+.email {
+    display: block;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 100%;
+    /* text-align: center; */
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.Footer p {
+    font-size: 20px;
+    padding: 8px;
+}
+
+.Footer h4 {
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+.Footer p:hover {
+    cursor: pointer;
+}
+
+.Footer label button {
+    font-size: 20px;
+    padding:8px 20px;
+    margin: 8px 5px 0px 5px;
+    /* background-color: gray; */
+    border-radius: 5px;
+    background-image: linear-gradient(to right, red, yellow);
+}
+
+.Footer span i {
+    font-size: 35px;
+    padding-left: 10px;
+}
+
+.Footer button:hover {
+    cursor: pointer;
+}
+
+.Footer i:hover {
+    cursor: pointer;
+    color: cornflowerblue;
+}
+
+@media screen and (max-width: 800px) {
+    footer {
+        flex-direction: column;
+        font-size: 25px;
+        text-align: center;
+        margin: 0;
+
+    }
+}
